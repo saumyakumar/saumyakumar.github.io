@@ -1,11 +1,13 @@
+import headshot from '../assets/headshot.jpg'
+
 function Hero() {
   return (
     <section className="hero" id="top">
+      <img className="hero-avatar" src={headshot} alt="Saumya Kumar" />
       <p className="eyebrow">Hi, I'm</p>
       <h1>Saumya Kumar</h1>
       <p className="tagline">
-        {/* TODO: replace with your own one-line pitch, e.g. "Frontend developer building with Vue and React" */}
-        Frontend developer learning and building with JavaScript, Vue, and React.
+        Senior Frontend Engineer building scalable React, Vue.js, and AI-powered web experiences.
       </p>
       <div className="hero-links">
         <a className="btn btn-primary" href="#projects">

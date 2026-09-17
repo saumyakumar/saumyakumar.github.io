@@ -21,9 +21,11 @@ function Contact() {
             Resume
           </a>
         </li>
-        {/* TODO: add your LinkedIn link here, e.g.
-        <li><a href="https://linkedin.com/in/your-handle" target="_blank" rel="noreferrer">LinkedIn</a></li>
-        */}
+        <li>
+          <a href="https://www.linkedin.com/in/saumyakumar55/" target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>
+        </li>
       </ul>
     </section>
   )
