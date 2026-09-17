@@ -12,7 +12,16 @@ function Contact() {
             github.com/saumyakumar
           </a>
         </li>
-        {/* TODO: add your LinkedIn and/or resume link here, e.g.
+        <li>
+          <a
+            href="https://drive.google.com/file/d/1NEjYWGMTNgUkQezqUX5gppcA7nWo8l3H/view?usp=drive_link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Resume
+          </a>
+        </li>
+        {/* TODO: add your LinkedIn link here, e.g.
         <li><a href="https://linkedin.com/in/your-handle" target="_blank" rel="noreferrer">LinkedIn</a></li>
         */}
       </ul>

@@ -189,6 +189,10 @@ section {
   }
 }
 
+.hero-links {
+  flex-wrap: wrap;
+}
+
 .btn {
   display: inline-block;
   padding: 12px 24px;
@@ -317,6 +321,47 @@ section h2 {
   color: var(--text-muted);
   cursor: default;
   pointer-events: none;
+}
+
+/* Resume */
+
+.resume-embed {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
+}
+
+.resume-embed iframe {
+  display: block;
+  width: 100%;
+  height: 70vh;
+  min-height: 420px;
+  border: none;
+}
+
+.resume-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.resume-actions .btn {
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+.resume-actions .btn-secondary {
+  border: 1px solid var(--border);
+}
+
+@media (max-width: 480px) {
+  .resume-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
 
 /* Contact */
