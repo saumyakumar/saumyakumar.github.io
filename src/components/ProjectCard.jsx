@@ -1,8 +1,8 @@
 import { useRevealOnScroll } from '../hooks/useRevealOnScroll'
 
-function ProjectCard({ name, description, tags, repoUrl, label }) {
+function ProjectCard({ name, description, tags, repoUrl, label, index }) {
   const isPlaceholder = repoUrl === '#'
-  const revealRef = useRevealOnScroll()
+  const revealRef = useRevealOnScroll(index)
 
   return (
     <article className="project-card reveal" ref={revealRef}>

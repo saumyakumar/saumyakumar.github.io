@@ -1,6 +1,10 @@
+import { useRevealOnScroll } from '../hooks/useRevealOnScroll'
+
 function About() {
+  const revealRef = useRevealOnScroll()
+
   return (
-    <section className="about" id="about">
+    <section className="about reveal" id="about" ref={revealRef}>
       <h2>About</h2>
       <p>
         I'm a Senior Frontend Engineer at CommerceIQ with 6+ years of

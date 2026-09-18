@@ -44,8 +44,8 @@ const experience = [
   },
 ]
 
-function ExperienceItem({ company, location, title, dates, bullets }) {
-  const revealRef = useRevealOnScroll()
+function ExperienceItem({ company, location, title, dates, bullets, index }) {
+  const revealRef = useRevealOnScroll(index)
 
   return (
     <article className="experience-item reveal" ref={revealRef}>
@@ -71,8 +71,8 @@ function Experience() {
     <section className="experience" id="experience">
       <h2>Experience</h2>
       <div className="experience-list">
-        {experience.map((role) => (
-          <ExperienceItem key={`${role.company}-${role.dates}`} {...role} />
+        {experience.map((role, index) => (
+          <ExperienceItem key={`${role.company}-${role.dates}`} {...role} index={index} />
         ))}
       </div>
     </section>

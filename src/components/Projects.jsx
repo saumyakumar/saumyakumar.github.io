@@ -23,8 +23,8 @@ function Projects() {
     <section className="projects" id="projects">
       <h2>Projects</h2>
       <div className="project-grid">
-        {projects.map((project) => (
-          <ProjectCard key={project.name} {...project} />
+        {projects.map((project, index) => (
+          <ProjectCard key={project.name} {...project} index={index} />
         ))}
       </div>
     </section>

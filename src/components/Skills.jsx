@@ -1,3 +1,5 @@
+import { useRevealOnScroll } from '../hooks/useRevealOnScroll'
+
 const skills = [
   'JavaScript',
   'Vue 3',
@@ -11,8 +13,10 @@ const skills = [
 ]
 
 function Skills() {
+  const revealRef = useRevealOnScroll()
+
   return (
-    <section className="skills" id="skills">
+    <section className="skills reveal" id="skills" ref={revealRef}>
       <h2>Skills</h2>
       <ul className="tag-list">
         {skills.map((skill) => (

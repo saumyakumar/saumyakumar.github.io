@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useRevealOnScroll } from '../hooks/useRevealOnScroll'
 
 const RESUME_FILE_ID = '1NEjYWGMTNgUkQezqUX5gppcA7nWo8l3H'
 const RESUME_VIEW_URL = `https://drive.google.com/file/d/${RESUME_FILE_ID}/view?usp=drive_link`
@@ -7,6 +8,7 @@ const RESUME_DOWNLOAD_URL = `https://drive.google.com/uc?export=download&id=${RE
 
 function Resume() {
   const [copied, setCopied] = useState(false)
+  const revealRef = useRevealOnScroll()
 
   const handleCopyLink = async () => {
     try {
@@ -26,7 +28,7 @@ function Resume() {
   }
 
   return (
-    <section className="resume" id="resume">
+    <section className="resume reveal" id="resume" ref={revealRef}>
       <h2>Resume</h2>
       <div className="resume-embed">
         <iframe src={RESUME_PREVIEW_URL} title="Resume" allow="autoplay" loading="lazy" />

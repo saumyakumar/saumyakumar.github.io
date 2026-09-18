@@ -1,6 +1,10 @@
+import { useRevealOnScroll } from '../hooks/useRevealOnScroll'
+
 function Contact() {
+  const revealRef = useRevealOnScroll()
+
   return (
-    <section className="contact" id="contact">
+    <section className="contact reveal" id="contact" ref={revealRef}>
       <h2>Contact</h2>
       <p>Feel free to reach out or check out my code.</p>
       <ul className="contact-list">
