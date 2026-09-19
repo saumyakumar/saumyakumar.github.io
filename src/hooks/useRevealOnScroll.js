@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 
-// Adds a "reveal-visible" class the first time the element scrolls into view.
+// Toggles a "reveal-visible" class each time the element enters/leaves the viewport.
 // `index` staggers list items by delaying each one's transition slightly.
 export function useRevealOnScroll(index = 0) {
   const ref = useRef(null)
@@ -19,10 +19,7 @@ export function useRevealOnScroll(index = 0) {
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          node.classList.add('reveal-visible')
-          observer.disconnect()
-        }
+        node.classList.toggle('reveal-visible', entry.isIntersecting)
       },
       { threshold: 0.15 }
     )
