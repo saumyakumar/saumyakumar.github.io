@@ -1,4 +1,5 @@
 import { useRevealOnScroll } from '../hooks/useRevealOnScroll'
+import Stats from './Stats'
 
 const experience = [
   {
@@ -70,6 +71,7 @@ function Experience() {
   return (
     <section className="experience" id="experience">
       <h2>Experience</h2>
+      <Stats />
       <div className="experience-list">
         {experience.map((role, index) => (
           <ExperienceItem key={`${role.company}-${role.dates}`} {...role} index={index} />

@@ -303,7 +303,46 @@ section h2 {
   max-width: 640px;
 }
 
+.about-quote {
+  margin: 24px 0 0;
+  padding-left: 20px;
+  max-width: 560px;
+  border-left: 3px solid var(--accent);
+  color: var(--text-h);
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.about-quote span {
+  color: var(--accent);
+  font-style: normal;
+  font-weight: 600;
+}
+
 /* Experience */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--border);
+}
+
+.stat-number {
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0 0 4px;
+}
+
+.stat-label {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin: 0;
+}
 
 .experience-list {
   display: flex;
@@ -434,6 +473,84 @@ section h2 {
 .tag-lg {
   font-size: 14px;
   padding: 6px 14px;
+}
+
+.marquee {
+  display: flex;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.marquee-track {
+  display: flex;
+  flex-shrink: 0;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  margin-right: 8px;
+  list-style: none;
+  animation: marquee 26s linear infinite;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 8px));
+  }
+}
+
+.case-study-toggle {
+  align-self: flex-start;
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 500;
+  font: inherit;
+  cursor: pointer;
+}
+
+.case-study-toggle:hover {
+  text-decoration: underline;
+}
+
+.case-study {
+  margin: 0;
+  padding: 16px;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.case-study dt {
+  color: var(--text-h);
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-top: 12px;
+}
+
+.case-study dt:first-child {
+  margin-top: 0;
+}
+
+.case-study dd {
+  margin: 0;
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .project-link {

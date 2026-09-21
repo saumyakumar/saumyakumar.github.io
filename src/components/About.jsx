@@ -24,6 +24,11 @@ function About() {
         mentoring engineers — I currently review 40+ PRs a month and
         participate in frontend hiring.
       </p>
+      <blockquote className="about-quote">
+        The part I enjoy most is the boring middle: taking something that
+        works in a demo and making it hold up at <span>2,500+ instances</span>,
+        without anyone noticing the effort it took to get there.
+      </blockquote>
     </section>
   )
 }
