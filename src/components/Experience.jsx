@@ -11,6 +11,7 @@ const experience = [
       'Built a configuration-driven React rendering engine that transforms AI-generated specifications into interactive enterprise dashboards, and conceived and architected an Electron app enabling governed AI-assisted delivery across Product, Design, and Engineering.',
       'Owned and delivered 10+ enterprise-scale UI modules impacting 80+ clients and 2,500+ active instances, supporting products responsible for 15% of company ARR.',
       'Reduced production bundle size from 11 MB to 1.5 MB (86%) and increased automated test coverage from 40% to 95% via Shift-Left testing, Jest, and Cypress E2E automation.',
+      'Built a headless AI-powered PPT export service that plugs into any dashboard and generates presentation-ready exports, engineered with token-budget awareness and data-sanity checks to keep AI-generated output reliable at scale.',
       'Mentored 5+ developers, reviewed 40+ pull requests a month, and participated in mid/senior frontend hiring.',
     ],
   },

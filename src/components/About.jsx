@@ -1,5 +1,4 @@
 import { useRevealOnScroll } from '../hooks/useRevealOnScroll'
-import AiPractice from './AiPractice'
 
 function About() {
   const revealRef = useRevealOnScroll()
@@ -25,7 +24,6 @@ function About() {
         mentoring engineers — I currently review 40+ PRs a month and
         participate in frontend hiring.
       </p>
-      <AiPractice />
       <blockquote className="about-quote">
         The part I enjoy most is the boring middle: taking something that
         works in a demo and making it hold up at <span>2,500+ instances</span>,
