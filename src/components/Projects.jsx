@@ -1,4 +1,5 @@
 import ProjectCard from './ProjectCard'
+import jobSearchCover from '../assets/job-search/cover.jpg'
 
 const projects = [
   {
@@ -17,6 +18,18 @@ const projects = [
       limitation:
         "No walking distance — only driving. OSRM's free public server doesn't support a real walking profile, and the free alternative that does needs batch-routing quota disproportionate to a single-route lookup. Rather than add unreliable complexity, I scoped it out.",
     },
+  },
+  {
+    name: 'Job search as a system',
+    subtitle: 'An AI workflow with human approval at every step',
+    label: 'Workflow · Case study',
+    description:
+      'I turned a manual, error-prone job search into a repeatable workflow where an AI assistant does the checking and I make every decision.',
+    tags: ['AI workflow', 'Prompt design', 'Process design', 'Human in the loop'],
+    image: jobSearchCover,
+    imageAlt: 'Cover card: I stopped applying blindly. I built a system instead. An AI workflow with human approval at every step.',
+    repoUrl: 'https://github.com/saumyakumar/job-search-as-a-system',
+    linkLabel: 'Read the write-up on GitHub →',
   },
   {
     name: 'Claude Desk Assistant',
